@@ -13,18 +13,26 @@
   <body>
     <main>
       <div class="left-container">
-        <img src="./assets/Grizzhacks.png" />
+        <div class="image"><img src="./assets/Grizzhacks.png" /></div>
         <div class="clock">
           <div class="clock-col">
-            <p class="clock-hours"></p>
+            <p id="clock-hours" class="time">06</p>
             <p class="clock-label">Hours</p>
           </div>
-          <div class="clock-col">
-            <p class="clock-minutes"></p>
-            <p class="clock-label">Minutes</p>
+          <div class="colon">
+            <div class="dot"></div>
+            <div class="dot"></div>
           </div>
           <div class="clock-col">
-            <p class="clock-seconds"></p>
+            <p id="clock-minutes" class="time">13</p>
+            <p class="clock-label">Minutes</p>
+          </div>
+          <div class="colon">
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+          <div class="clock-col">
+            <p id="clock-seconds" class="time">25</p>
             <p class="clock-label">Seconds</p>
           </div>
         </div>
@@ -44,6 +52,7 @@
             </div>
           </div>
         </section>
+        <hr />
         <section class="coming-up">
           <h3>Coming Up</h3>
           <h2>MLH Cup Stacking</h2>
@@ -60,5 +69,6 @@
         </section>
       </div>
     </main>
+    <script src="scripts.js"></script>
   </body>
 </html>
