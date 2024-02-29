@@ -1,0 +1,131 @@
+{
+  "wednesday": [
+    {
+      "name": "Check In and Sponsor Expo",
+      "time": "10:00 - 11:00 AM",
+      "location": "EC Atrium"
+    },
+    {
+      "name": "Opening Ceremony",
+      "time": "11:00 - 11:30 AM",
+      "location": "EC 116"
+    },
+    {
+      "name": "Sponsor Expo",
+      "time": "11:30 - 1:00 PM",
+      "location": "EC Atrium"
+    },
+    {
+      "name": "Lunch!",
+      "time": "1:00 - 2:00 PM",
+      "location": "2nd Floor Balcony"
+    },
+    {
+      "name": "'Applicant, Intern, Employee: Tips from a Team Lead' - Ashley Copeland 365 Retail Markets",
+      "time": "2:00 - 2:30 PM",
+      "location": "EC 254"
+    },
+    {
+      "name": "'GitHub Workshop' - Aziman MLH",
+      "time": "2:30 - 3:30 PM",
+      "location": "EC 254"
+    },
+    {
+      "name": "'Clean Code' - OUCU",
+      "time": "3:30 - 4:00 PM",
+      "location": "EC 254"
+    },
+    {
+      "name": "LCE",
+      "time": "4:00 - 4:30 PM",
+      "location": "EC 254"
+    },
+    {
+      "name": "???",
+      "time": "4:30 - 5:00 PM",
+      "location": "EC 254"
+    },
+    {
+      "name": "'How to Start a Startup' - Aleksandra Medina Frich",
+      "time": "5:00 - 5:30 PM",
+      "location": "EC 254"
+    },
+    {
+      "name": "???",
+      "time": "5:30 - 6:00 PM",
+      "location": "EC 254"
+    },
+    {
+      "name": "Dinner!",
+      "time": "6:00 - 7:00 PM",
+      "location": "2nd Floor Balcony"
+    },
+    {
+      "name": "???",
+      "time": "7:00 - 7:30 PM",
+      "location": "EC 254"
+    },
+    {
+      "name": "Cyber OU",
+      "time": "7:30 - 8:00 PM",
+      "location": "EC 254"
+    },
+    {
+      "name": "Board Games!",
+      "time": "7:00 - 9:00 PM",
+      "location": "EC 279"
+    },
+    {
+      "name": "Video Games!",
+      "time": "9:00 - 11:00 PM",
+      "location": "EC 279"
+    },
+    {
+      "name": "DevPost Workshop/Questions",
+      "time": "11:00 - 11:30 PM",
+      "location": "EC 254"
+    }
+  ],
+  "thursday": [
+    {
+      "name": "!!!COOKIES!!!",
+      "time": "12:00 - 12:30 AM",
+      "location": "2nd Floor Balcony"
+    },
+    {
+      "name": "Trivia",
+      "time": "12:30 - 1:30 AM",
+      "location": "EC 116"
+    },
+    {
+      "name": "Breakfast!",
+      "time": "9:00 - 10:00 AM",
+      "location": "2nd Floor Balcony"
+    },
+    {
+      "name": "'How To Demo' - Noah",
+      "time": "12:00 - 12:30 PM",
+      "location": "???"
+    },
+    {
+      "name": "Hacking Ends!",
+      "time": "12:30 PM",
+      "location": "Everywhere"
+    },
+    {
+      "name": "Demos and Judging",
+      "time": "1:00 - 2:00 PM",
+      "location": "EC 116"
+    },
+    {
+      "name": "Lunch!",
+      "time": "2:00 - 3:00 PM",
+      "location": "2nd Floor Balcony"
+    },
+    {
+      "name": "Closing Ceremony :(",
+      "time": "3:00 - 3:30 PM",
+      "location": "EC 116"
+    }
+  ]
+}
