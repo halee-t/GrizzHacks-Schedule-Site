@@ -6,7 +6,7 @@ app.controller("ScheduleCtrl", function ($scope, $http, $interval) {
 
   function loadSchedule() {
     $http
-      .get("../schedule/grizzhacks6_schedule.json")
+      .get("./schedule/grizzhacks6_schedule.json")
       .then(function (response) {
         $scope.events = response.data;
         updateCurrentEvents();
@@ -63,7 +63,7 @@ app.controller("ScheduleCtrl", function ($scope, $http, $interval) {
       }
     }
 
-    return null;
+    return "I'm here too";
   }
 
   function findNextEvent(currentTime) {
@@ -78,7 +78,7 @@ app.controller("ScheduleCtrl", function ($scope, $http, $interval) {
       }
     }
 
-    return null;
+    return "I'm here";
   }
 
   function parseEventTime(eventTime, day) {
