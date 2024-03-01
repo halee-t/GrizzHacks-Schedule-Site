@@ -6,8 +6,6 @@
     <title>GrizzHacks6 Live</title>
     <!--AngularJS Library-->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
-    <!--path to AngularJS controller file-->
-    <script src="js/app.js"></script>
 
     <link rel="stylesheet" href="css/styles.css" />
     <link
@@ -19,10 +17,10 @@
   <body ng-controller="ScheduleCtrl">
     <main>
       <div class="left-container">
-        <div class="image"><img src="./assets/Grizzhacks.png" /></div>
+        <div class="image"><img src="./assets/white logo.png" /></div>
         <div class="clock">
           <div class="clock-col">
-            <p id="clock-hours" class="time">{{ hour }}</p>
+            <p id="clock-hours" class="time">{{ hour | pad}}</p>
             <p class="clock-label">Hours</p>
           </div>
           <div class="colon">
@@ -30,7 +28,7 @@
             <div class="dot"></div>
           </div>
           <div class="clock-col">
-            <p id="clock-minutes" class="time">{{ min }}</p>
+            <p id="clock-minutes" class="time">{{ min | pad }}</p>
             <p class="clock-label">Minutes</p>
           </div>
           <div class="colon">
@@ -38,42 +36,70 @@
             <div class="dot"></div>
           </div>
           <div class="clock-col">
-            <p id="clock-seconds" class="time">{{ sec }}</p>
+            <p id="clock-seconds" class="time">{{ sec | pad}}</p>
             <p class="clock-label">Seconds</p>
           </div>
         </div>
+        <h5>Left To Code</h5>
       </div>
+      <div class="vertical-line"></div>
       <div class="right-container">
-        <section class="happening-now">
-          <h3>Happening Now</h3>
-          <h2 id="happening-now-title">{{ currentEvent.name }}</h2>
+        <section class="previously">
+          <h3>Previously</h3>
+          <h2 id="previously-title">
+            {{ previousEvent.name || 'GrizzHacks 6'}}
+          </h2>
           <div class="time-location">
             <div class="time">
-              <span class="material-symbols-outlined"> schedule </span>
-              <p id="happening-now-time">{{ currentEvent.time }}</p>
+              <span class="material-symbols-outlined icon"> schedule </span>
+              <p id="previously-time">
+                {{ previousEvent.formattedStartTime | date:'shortTime' }} - {{
+                previousEvent.formattedEndTime | date:'shortTime' }}
+              </p>
             </div>
             <div class="location">
-              <span class="material-symbols-outlined"> location_on </span>
+              <span class="material-symbols-outlined icon"> location_on </span>
+              <p id="previously-location">{{ previousEvent.location }}</p>
+            </div>
+          </div>
+        </section>
+        <section class="happening-now">
+          <h3>Happening Now</h3>
+          <h2 id="happening-now-title">{{ currentEvent.name || 'Hacking'}}</h2>
+          <div class="time-location">
+            <div class="time">
+              <span class="material-symbols-outlined icon"> schedule </span>
+              <p id="happening-now-time">
+                {{ currentEvent.formattedStartTime | date:'shortTime' }} - {{
+                currentEvent.formattedEndTime | date:'shortTime' }}
+              </p>
+            </div>
+            <div class="location">
+              <span class="material-symbols-outlined icon"> location_on </span>
               <p id="happening-now-location">{{ currentEvent.location }}</p>
             </div>
           </div>
         </section>
-        <hr />
         <section class="coming-up">
           <h3>Coming Up</h3>
-          <h2>{{ nextEvent.name }}</h2>
+          <h2>{{ nextEvent.name || 'Hacking'}}</h2>
           <div class="time-location">
             <div class="time">
-              <span class="material-symbols-outlined"> schedule </span>
-              <p>{{ nextEvent.time }}</p>
+              <span class="material-symbols-outlined icon"> schedule </span>
+              <p>
+                {{ nextEvent.formattedStartTime | date:'shortTime' }} - {{
+                nextEvent.formattedEndTime | date:'shortTime' }}
+              </p>
             </div>
             <div class="location">
-              <span class="material-symbols-outlined"> location_on </span>
+              <span class="material-symbols-outlined icon"> location_on </span>
               <p>{{ nextEvent.location }}</p>
             </div>
           </div>
         </section>
       </div>
     </main>
+    <!--path to AngularJS controller file-->
+    <script src="js/app.js"></script>
   </body>
 </html>
