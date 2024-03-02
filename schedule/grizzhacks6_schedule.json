@@ -1,147 +1,171 @@
 {
-  "2024-02-29": [
+  "2024-03-01": [
     {
-      "name": "Check In and Sponsor Expo",
+      "name": "Check In/Sponsor Fair",
+      "description": "",
       "startTime": "10:00",
       "endTime": "11:00",
       "location": "EC Atrium"
     },
     {
       "name": "Opening Ceremony",
+      "description": "",
       "startTime": "11:00",
       "endTime": "11:30",
       "location": "EC 116"
     },
     {
       "name": "Sponsor Expo",
+      "description": "Team Matching from 11:30 - 12:00pm",
       "startTime": "11:30",
-      "endTime": "1:00",
+      "endTime": "13:00",
       "location": "EC Atrium"
     },
     {
-      "name": "Lunch!",
+      "name": "Lunch (Chipotle)",
+      "description": "Burritos: Chicken, Carnitas, Steak, Beef Barbacoa, Sofritas, and Veggie",
       "startTime": "13:00",
       "endTime": "14:00",
       "location": "2nd Floor Balcony"
     },
     {
-      "name": "'Applicant, Intern, Employee: Tips from a Team Lead' - Ashley Copeland 365 Retail Markets",
+      "name": "Tech Talk (365 Retail Markets)",
+      "description": "'Applicant, Intern, Employee: Tips from a Team Lead' - Ashley Copeland",
       "startTime": "14:00",
       "endTime": "14:30",
       "location": "EC 254"
     },
     {
-      "name": "'GitHub Copilot Workshop' - Aziman MLH",
+      "name": "Workshop (MLH)",
+      "description": "'GitHub Copilot Workshop' - Aziman",
       "startTime": "14:30",
       "endTime": "15:30",
       "location": "EC 254"
     },
     {
-      "name": "'Clean Code' - Alexandre de Almeida OU Credit Union",
+      "name": "Tech Talk (OU Credit Union)",
+      "description": "'Clean Code' - Alexandre de Almeida",
       "startTime": "15:30",
       "endTime": "16:00",
       "location": "EC 254"
     },
     {
-      "name": "LCE",
+      "name": "Tech Talk (Little Caesars)",
+      "description": "TBA",
       "startTime": "16:00",
       "endTime": "16:30",
       "location": "EC 254"
     },
     {
-      "name": "Whisker",
+      "name": "Tech Talk (Whisker)",
+      "description": "TBA",
       "startTime": "16:30",
       "endTime": "17:00",
       "location": "EC 254"
     },
     {
-      "name": "'How to Start a Startup' - Aleksandra Medina Frich",
+      "name": "Tech Talk (Frich)",
+      "description": "'How to Start a Startup' - Aleksandra Medina",
       "startTime": "17:00",
       "endTime": "17:30",
       "location": "EC 254"
     },
     {
-      "name": "???",
+      "name": "Tech Talk (BorgWarner)",
+      "description": "TBA",
       "startTime": "17:30",
       "endTime": "18:00",
       "location": "EC 254"
     },
     {
-      "name": "Dinner!",
+      "name": "Dinner (Happy's Pizza)",
+      "description": "Salad, Wings, Meat, Cheese, and Veggie Pizza Options",
       "startTime": "18:00",
       "endTime": "19:00",
       "location": "2nd Floor Balcony"
     },
     {
-      "name": "???",
+      "name": "Tech Talk (???)",
+      "description": "TBA",
       "startTime": "19:00",
       "endTime": "19:30",
       "location": "EC 254"
     },
     {
-      "name": "Board Games!",
+      "name": "Game Room (Board Games)",
+      "description": "By the Gaming Guild and Chess Club",
       "startTime": "19:00",
       "endTime": "21:00",
       "location": "EC 279"
     },
     {
-      "name": "Cyber OU",
+      "name": "Tech Talk (Cyber OU)",
+      "description": "TBA",
       "startTime": "19:30",
       "endTime": "20:00",
       "location": "EC 254"
     },
     {
-      "name": "Video Games!",
+      "name": "Game Room (Video Games)",
+      "description": "By the Oakland Smash Club",
       "startTime": "21:00",
       "endTime": "23:00",
       "location": "EC 279"
     },
     {
       "name": "DevPost Workshop/Questions",
+      "description": "DevPost Registration due at Midnight!",
       "startTime": "23:00",
       "endTime": "23:30",
       "location": "EC 254"
     }
   ],
-  "2024-03-01": [
+  "2024-03-02": [
     {
       "name": "Cookies and Trivia",
+      "description": "",
       "startTime": "0:00",
       "endTime": "0:30",
       "location": "EC 116"
     },
     {
-      "name": "Breakfast!",
+      "name": "Breakfast (Rose House Brunch)",
+      "description": "TBA",
       "startTime": "9:00",
       "endTime": "10:00",
       "location": "2nd Floor Balcony"
     },
     {
-      "name": "'How To Demo' - Noah",
+      "name": "How to Demo - Noah Sabaj",
+      "description": "",
       "startTime": "12:00",
       "endTime": "12:30",
       "location": "EC 254"
     },
     {
       "name": "Hacking Ends!",
+      "description": "Please be patient as we prepare for judging.",
       "startTime": "12:30",
       "endTime": "13:00",
       "location": "Everywhere"
     },
     {
       "name": "Demos and Judging",
+      "description": "",
       "startTime": "13:00",
       "endTime": "14:00",
       "location": "EC 116"
     },
     {
-      "name": "Lunch!",
+      "name": "Lunch (Jimmy Johns)",
+      "description": "Subs: Veggie, The Pepe, and Turkey Tom",
       "startTime": "14:00",
       "endTime": "15:00",
       "location": "2nd Floor Balcony"
     },
     {
-      "name": "Closing Ceremony :(",
+      "name": "Closing Ceremony",
+      "description": "It's been fun :)",
       "startTime": "15:00",
       "endTime": "15:30",
       "location": "EC 116"

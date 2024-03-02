@@ -42,7 +42,7 @@ main {
   margin-bottom: 50px;
 }
 .left-container .image img {
-  width: 10rem;
+  width: 12rem;
 }
 .clock {
   width: 100%;
@@ -60,7 +60,7 @@ main {
 
 .clock-col .time {
   text-align: center;
-  font-size: 64px;
+  font-size: 80px;
   color: var(--font-primary);
 }
 
@@ -91,7 +91,7 @@ main {
   text-transform: uppercase;
   font-weight: 400;
   margin-top: 50px;
-  font-size: 32px;
+  font-size: 40px;
 }
 
 .vertical-line {
@@ -121,6 +121,19 @@ main {
 .right-container h2 {
   font-size: 64px;
   text-align: center;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+#happening-now-description {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+#coming-up-description {
+  font-size: 16px;
+  text-align: center;
   margin-bottom: 25px;
 }
 
@@ -139,7 +152,8 @@ main {
 .coming-up h2,
 .previously h2 {
   font-size: 32px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+  line-height: 1;
 }
 
 .coming-up .time-location,

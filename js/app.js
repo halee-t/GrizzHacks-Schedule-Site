@@ -1,4 +1,5 @@
 var app = angular.module("grizzHacksSchedule", []);
+var testTime = new Date("March 02, 2024 15:00:00 GMT-0500"); //for testing purposes
 
 app.filter("pad", function () {
   return function (input) {
@@ -46,15 +47,17 @@ app.controller("ScheduleCtrl", function ($scope, $http, $interval, $filter) {
   }
 
   function updateCurrentEvents() {
-    var currentTime = new Date();
+    // var currentTime = new Date();
+    var currentTime = testTime; //for testing purposes
 
-    $scope.previousEvent = angular.copy($scope.currentEvent);
+    // $scope.previousEvent = angular.copy($scope.currentEvent);
     $scope.currentEvent = findCurrentEvent(currentTime);
 
     // Check if currentEvent has changed, and update previouslyEvent accordingly
-    if (!angular.equals($scope.currentEvent, $scope.previouslyEvent)) {
-      $scope.previouslyEvent = angular.copy($scope.previouslyEvent);
-    }
+    // if (!angular.equals($scope.currentEvent, $scope.previousEvent)) {
+    //   $scope.previousEvent = angular.copy($scope.currentEvent);
+    // }
+    $scope.previousEvent = findPreviousEvent($scope.currentEvent);
 
     $scope.nextEvent = findNextEvent(currentTime);
   }
@@ -91,6 +94,22 @@ app.controller("ScheduleCtrl", function ($scope, $http, $interval, $filter) {
     return null;
   }
 
+  function findPreviousEvent(currentEvent) {
+    var previousId;
+    var previousDay;
+    for (var day in $scope.events) {
+      for (var i = 0; i < $scope.events[day].length; i++) {
+        if (currentEvent.name == $scope.events[day][i].name) {
+          previousId = i - 1;
+          previousDay = day;
+        }
+      }
+    }
+
+    // Change the line below
+    return $scope.events[previousDay][previousId];
+  }
+
   function findNextEvent(currentTime) {
     for (var day in $scope.events) {
       for (var i = 0; i < $scope.events[day].length; i++) {
@@ -109,6 +128,18 @@ app.controller("ScheduleCtrl", function ($scope, $http, $interval, $filter) {
     return null;
   }
 
+  function changeFontSize() {
+    var textElement = document.getElementById("happening-now-description");
+    var textLength = textElement.innerHTML.length;
+
+    if (textLength > 40) {
+      // You can set your threshold here
+      textElement.style.fontSize = "24px"; // Set the desired font size
+    } else {
+      textElement.style.fontSize = "32px"; // Default font size
+    }
+  }
+
   $scope.currentEvent = {};
   $scope.nextEvent = {};
 
@@ -117,6 +148,7 @@ app.controller("ScheduleCtrl", function ($scope, $http, $interval, $filter) {
   loadSchedule();
 
   $interval(calculateCountdown, 1000);
+  $interval(changeFontSize, 1000);
 
-  $interval(loadSchedule, 60 * 1000);
+  $interval(loadSchedule, 1000);
 });

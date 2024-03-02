@@ -46,54 +46,61 @@
       <div class="right-container">
         <section class="previously">
           <h3>Previously</h3>
-          <h2 id="previously-title">
-            {{ previousEvent.name || 'GrizzHacks 6'}}
-          </h2>
+          <h2 id="previously-title">{{ previousEvent.name || 'Coding'}}</h2>
           <div class="time-location">
             <div class="time">
               <span class="material-symbols-outlined icon"> schedule </span>
               <p id="previously-time">
-                {{ previousEvent.formattedStartTime | date:'shortTime' }} - {{
-                previousEvent.formattedEndTime | date:'shortTime' }}
+                {{ (previousEvent.formattedStartTime | date:'shortTime') ||
+                'Now' }} - {{ (previousEvent.formattedEndTime |
+                date:'shortTime') || 'Forever' }}
               </p>
             </div>
             <div class="location">
               <span class="material-symbols-outlined icon"> location_on </span>
-              <p id="previously-location">{{ previousEvent.location }}</p>
+              <p id="previously-location">
+                {{ previousEvent.location || 'Everywhere'}}
+              </p>
             </div>
           </div>
         </section>
         <section class="happening-now">
           <h3>Happening Now</h3>
-          <h2 id="happening-now-title">{{ currentEvent.name || 'Hacking'}}</h2>
+          <h2 id="happening-now-title">{{ currentEvent.name || 'Coding'}}</h2>
+          <p id="happening-now-description">{{ currentEvent.description }}</p>
           <div class="time-location">
             <div class="time">
               <span class="material-symbols-outlined icon"> schedule </span>
               <p id="happening-now-time">
-                {{ currentEvent.formattedStartTime | date:'shortTime' }} - {{
-                currentEvent.formattedEndTime | date:'shortTime' }}
+                {{ (currentEvent.formattedStartTime | date:'shortTime') || 'Now'
+                }} - {{ (currentEvent.formattedEndTime | date:'shortTime') ||
+                'Forever' }}
               </p>
             </div>
             <div class="location">
               <span class="material-symbols-outlined icon"> location_on </span>
-              <p id="happening-now-location">{{ currentEvent.location }}</p>
+              <p id="happening-now-location">
+                {{ currentEvent.location || 'Everywhere' }}
+              </p>
             </div>
           </div>
         </section>
         <section class="coming-up">
           <h3>Coming Up</h3>
           <h2>{{ nextEvent.name || 'Hacking'}}</h2>
+          <p id="coming-up-description">{{ nextEvent.description }}</p>
           <div class="time-location">
             <div class="time">
               <span class="material-symbols-outlined icon"> schedule </span>
               <p>
-                {{ nextEvent.formattedStartTime | date:'shortTime' }} - {{
-                nextEvent.formattedEndTime | date:'shortTime' }}
+                {{ (nextEvent.formattedStartTime | date:'shortTime') || 'Now' }}
+                - {{ (nextEvent.formattedEndTime | date:'shortTime') ||
+                'Forever' }}
               </p>
             </div>
             <div class="location">
               <span class="material-symbols-outlined icon"> location_on </span>
-              <p>{{ nextEvent.location }}</p>
+              <p>{{ nextEvent.location || 'Everywhere' }}</p>
             </div>
           </div>
         </section>
