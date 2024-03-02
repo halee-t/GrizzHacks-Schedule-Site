@@ -118,6 +118,13 @@
       "startTime": "23:00",
       "endTime": "23:30",
       "location": "EC 254"
+    },
+    {
+      "name": "Coding",
+      "description": "",
+      "startTime": "23:30",
+      "endTime": "24:00",
+      "location": ""
     }
   ],
   "2024-03-02": [
@@ -127,6 +134,13 @@
       "startTime": "0:00",
       "endTime": "0:30",
       "location": "EC 116"
+    },
+    {
+      "name": "Coding and Sleeping",
+      "description": "We have a sleep/quiet room open in EC 281",
+      "startTime": "0:30",
+      "endTime": "9:00",
+      "location": ""
     },
     {
       "name": "Breakfast (Rose House Brunch)",
@@ -169,6 +183,13 @@
       "startTime": "15:00",
       "endTime": "15:30",
       "location": "EC 116"
+    },
+    {
+      "name": "The End!",
+      "description": "See you at GrizzHacks7...👀",
+      "startTime": "15:30",
+      "endTime": "16:00",
+      "location": "Oakland University"
     }
   ]
 }

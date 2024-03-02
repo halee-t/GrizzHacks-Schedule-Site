@@ -50,13 +50,8 @@ app.controller("ScheduleCtrl", function ($scope, $http, $interval, $filter) {
     // var currentTime = new Date();
     var currentTime = testTime; //for testing purposes
 
-    // $scope.previousEvent = angular.copy($scope.currentEvent);
     $scope.currentEvent = findCurrentEvent(currentTime);
 
-    // Check if currentEvent has changed, and update previouslyEvent accordingly
-    // if (!angular.equals($scope.currentEvent, $scope.previousEvent)) {
-    //   $scope.previousEvent = angular.copy($scope.currentEvent);
-    // }
     $scope.previousEvent = findPreviousEvent($scope.currentEvent);
 
     $scope.nextEvent = findNextEvent(currentTime);
