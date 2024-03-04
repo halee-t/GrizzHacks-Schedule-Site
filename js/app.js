@@ -1,5 +1,5 @@
 var app = angular.module("grizzHacksSchedule", []);
-var testTime = new Date("March 02, 2024 15:00:00 GMT-0500"); //for testing purposes
+var testTime = new Date("March 01, 2024 14:00:00 GMT-0500"); //for testing purposes
 
 app.filter("pad", function () {
   return function (input) {

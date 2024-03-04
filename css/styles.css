@@ -45,7 +45,8 @@ main {
   width: 12rem;
 }
 .clock {
-  width: 100%;
+  margin: 0 auto;
+  width: 300px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -180,4 +181,54 @@ main {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+/* RESPONSIVE FOR LAPTOPS */
+@media (max-width: 1400px) {
+  /* .vertical-line {
+    margin: 0 10px; /* Adjust margin as needed 
+    border: 1px solid var(--font-secondary); /* Border styling 
+    transform: rotate(180deg); /* Rotate line to be vertical 
+  }
+
+  main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    /* border: 1px solid white; 
+    padding: 50px 150px;
+    height: 75%;
+  } */
+
+  .right-container h3 {
+    font-size: 24px;
+  }
+
+  .right-container h2 {
+    font-size: 48px;
+  }
+
+  .time-location {
+    font-size: 20px;
+  }
+
+  #happening-now-description {
+    font-size: 24px;
+  }
+
+  .coming-up,
+  .previously {
+    width: 100%;
+  }
+
+  .coming-up h3,
+  .previously h3 {
+    font-size: 20px;
+  }
+
+  .coming-up h2,
+  .previously h2 {
+    font-size: 24px;
+  }
 }
