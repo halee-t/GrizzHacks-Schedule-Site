@@ -1,5 +1,5 @@
 var app = angular.module("grizzHacksSchedule", []);
-var testTime = new Date("March 01, 2024 17:00:00 GMT-0500"); //for testing purposes
+// var testTime = new Date("March 01, 2024 19:00:00 GMT-0500"); //for testing purposes
 
 app.filter("pad", function () {
   return function (input) {
@@ -47,8 +47,8 @@ app.controller("ScheduleCtrl", function ($scope, $http, $interval, $filter) {
   }
 
   function updateCurrentEvents() {
-    // var currentTime = new Date();
-    var currentTime = testTime; //for testing purposes
+    var currentTime = new Date();
+    // var currentTime = testTime; //for testing purposes
 
     $scope.currentEvent = findCurrentEvent(currentTime);
 

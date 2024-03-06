@@ -68,10 +68,6 @@ main {
   width: 100px;
 }
 
-#clock-hours {
-  margin-right: 32px;
-}
-
 .colon {
   display: flex;
   flex-direction: column;
