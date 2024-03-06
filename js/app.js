@@ -1,5 +1,5 @@
 var app = angular.module("grizzHacksSchedule", []);
-var testTime = new Date("March 01, 2024 14:00:00 GMT-0500"); //for testing purposes
+var testTime = new Date("March 01, 2024 17:00:00 GMT-0500"); //for testing purposes
 
 app.filter("pad", function () {
   return function (input) {
@@ -135,6 +135,81 @@ app.controller("ScheduleCtrl", function ($scope, $http, $interval, $filter) {
     }
   }
 
+  function twoEventsAtOnce() {
+    var currentTime = testTime;
+    var matchingEvents = [];
+    for (var day in $scope.events) {
+      for (var i = 0; i < $scope.events[day].length; i++) {
+        var event = $scope.events[day][i];
+        var startTime = parseTimeString(day, event.startTime);
+        var endTime = parseTimeString(day, event.endTime);
+        if (
+          startTime &&
+          endTime &&
+          currentTime >= startTime &&
+          currentTime < endTime
+        ) {
+          event.formattedStartTime = $filter("date")(startTime, "shortTime");
+          event.formattedEndTime = $filter("date")(endTime, "shortTime");
+          matchingEvents.push(event);
+        }
+      }
+    }
+
+    if (matchingEvents.length >= 2) {
+      for (var i = 0; i < matchingEvents.length; i++) {
+        var event = matchingEvents[i];
+        // Add your code to update CSS properties or perform other actions
+        // Add or remove a CSS class based on your requirement
+        var secondDisplay = document.getElementById("second-display");
+        var mainTitle = document.getElementById("happening-now-title");
+        var mainDescription = document.getElementById(
+          "happening-now-description"
+        );
+        var secondTitle = document.getElementById("second-happening-now-title");
+        var secondDescription = document.getElementById(
+          "second-happening-now-description"
+        );
+        var mainTime = document.getElementById("happening-now-time");
+        var mainLoc = document.getElementById("happening-now-location");
+        var mainTIcon = document.getElementById("t-icon");
+        var mainLIcon = document.getElementById("l-icon");
+        var timeLoc = document.getElementById("time-location");
+        var secondTime = document.getElementById("second-happening-now-time");
+        var secondTIcon = document.getElementById("secondTIcon");
+        var secondLIcon = document.getElementById("secondLIcon");
+        var secondLoc = document.getElementById(
+          "second-happening-now-location"
+        );
+
+        //change css
+        secondDisplay.style.display = "block";
+        mainTitle.style.fontSize = "32px";
+        mainDescription.style.fontSize = "20px";
+        mainTime.style.fontSize = "16px";
+        mainLoc.style.fontSize = "16px";
+        mainTIcon.style.fontSize = "16px";
+        mainLIcon.style.fontSize = "16px";
+        secondTime.style.fontSize = "16px";
+        secondLIcon.style.fontSize = "16px";
+        secondTIcon.style.fontSize = "16px";
+        secondLoc.style.fontSize = "16px";
+        secondTitle.style.fontSize = "32px";
+        secondDescription.style.fontSize = "20px";
+        timeLoc.style.gap = "10px";
+      }
+    } else {
+      var targetElement = document.getElementById("second-display");
+      targetElement.style.display = "none";
+    }
+
+    eventOne = matchingEvents[0];
+    eventTwo = matchingEvents[1];
+
+    $scope.currentEvent = eventOne;
+    $scope.secondEvent = eventTwo;
+  }
+
   $scope.currentEvent = {};
   $scope.nextEvent = {};
 
@@ -144,6 +219,7 @@ app.controller("ScheduleCtrl", function ($scope, $http, $interval, $filter) {
 
   $interval(calculateCountdown, 1000);
   $interval(changeFontSize, 1000);
+  $interval(twoEventsAtOnce, 1000);
 
   $interval(loadSchedule, 1000);
 });

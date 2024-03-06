@@ -50,22 +50,62 @@
         </section>
         <section class="happening-now">
           <h3>Happening Now</h3>
-          <h2 id="happening-now-title">{{ currentEvent.name || 'Coding'}}</h2>
-          <p id="happening-now-description">{{ currentEvent.description }}</p>
-          <div class="time-location">
-            <div class="time">
-              <span class="material-symbols-outlined icon"> schedule </span>
-              <p id="happening-now-time">
-                {{ (currentEvent.formattedStartTime | date:'shortTime') || 'Now'
-                }} - {{ (currentEvent.formattedEndTime | date:'shortTime') ||
-                'Forever' }}
+          <div class="information" id="information">
+            <div class="main-display" id="main-display">
+              <h2 id="happening-now-title">
+                {{ currentEvent.name || 'Coding'}}
+              </h2>
+              <p id="happening-now-description">
+                {{ currentEvent.description }}
               </p>
+              <div class="time-location" id="time-location">
+                <div class="time">
+                  <span class="material-symbols-outlined icon" id="t-icon">
+                    schedule
+                  </span>
+                  <p id="happening-now-time">
+                    {{ (currentEvent.formattedStartTime | date:'shortTime') ||
+                    'Now' }} - {{ (currentEvent.formattedEndTime |
+                    date:'shortTime') || 'Forever' }}
+                  </p>
+                </div>
+                <div class="location">
+                  <span class="material-symbols-outlined icon" id="l-icon">
+                    location_on
+                  </span>
+                  <p id="happening-now-location">
+                    {{ currentEvent.location || 'Everywhere' }}
+                  </p>
+                </div>
+              </div>
             </div>
-            <div class="location">
-              <span class="material-symbols-outlined icon"> location_on </span>
-              <p id="happening-now-location">
-                {{ currentEvent.location || 'Everywhere' }}
+            <div class="second-display" id="second-display">
+              <h2 id="second-happening-now-title">
+                {{ secondEvent.name || 'Coding'}}
+              </h2>
+              <p id="second-happening-now-description">
+                {{ secondEvent.description }}
               </p>
+              <div class="time-location">
+                <div class="time">
+                  <span class="material-symbols-outlined icon" id="secondTIcon">
+                    schedule
+                  </span>
+                  <p id="second-happening-now-time">
+                    {{ (secondEvent.formattedStartTime | date:'shortTime') ||
+                    'Now' }} - {{ (secondEvent.formattedEndTime |
+                    date:'shortTime') || 'Forever' }}
+                  </p>
+                </div>
+                <div class="location">
+                  <span class="material-symbols-outlined icon" id="secondLIcon">
+                    location_on
+                  </span>
+                  <p id="second-happening-now-location">
+                    {{ secondEvent.location || 'Everywhere' }}
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>

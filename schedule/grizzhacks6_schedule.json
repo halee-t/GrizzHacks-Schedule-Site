@@ -92,6 +92,9 @@
       "location": "EC 254"
     },
     {
+
+    },
+    {
       "name": "Game Room (Board Games)",
       "description": "By the Gaming Guild and Chess Club",
       "startTime": "19:00",
@@ -100,7 +103,7 @@
     },
     {
       "name": "Tech Talk (Cyber OU)",
-      "description": "TBA",
+      "description": "'Credential Harvesting' - David Francis, William Eng, and ZeHao He",
       "startTime": "19:30",
       "endTime": "20:00",
       "location": "EC 254"

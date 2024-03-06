@@ -56,6 +56,8 @@ main {
 .clock-col {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
 }
 
@@ -63,13 +65,18 @@ main {
   text-align: center;
   font-size: 80px;
   color: var(--font-primary);
+  width: 100px;
+}
+
+#clock-hours {
+  margin-right: 32px;
 }
 
 .colon {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin: 22px -50px 0;
+  margin: 32px -50px 0;
 }
 
 .dot {
@@ -132,6 +139,23 @@ main {
   margin-bottom: 25px;
 }
 
+.information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.second-display {
+  display: none;
+}
+
+#second-happening-now-description {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
 #coming-up-description {
   font-size: 16px;
   text-align: center;
@@ -185,22 +209,6 @@ main {
 
 /* RESPONSIVE FOR LAPTOPS */
 @media (max-width: 1400px) {
-  /* .vertical-line {
-    margin: 0 10px; /* Adjust margin as needed 
-    border: 1px solid var(--font-secondary); /* Border styling 
-    transform: rotate(180deg); /* Rotate line to be vertical 
-  }
-
-  main {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    gap: 100px;
-    /* border: 1px solid white; 
-    padding: 50px 150px;
-    height: 75%;
-  } */
-
   .right-container h3 {
     font-size: 24px;
   }
