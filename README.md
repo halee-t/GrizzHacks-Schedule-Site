@@ -6,9 +6,20 @@ The schedule displays the main name of the event, a description (if needed), the
 
 The purpose of this site is to be displayed on a projector, so there is also no mobile version.
 
+### GitHub Pages Link
+https://halee-t.github.io/GrizzHacks-Schedule-Site/
+
+
 ### Tech Used
 - HTML
 - CSS
 - JavaScript
 - Angular JS
+
+### Before Hackathon View
+![image](https://github.com/halee-t/GrizzHacks-Schedule-Site/assets/123340415/21157515-1cbb-45f0-b425-5c613cf44780)
+
+### During Hackathon View
+![image](https://github.com/halee-t/GrizzHacks-Schedule-Site/assets/123340415/107eecd9-cb73-44a4-88a7-9607d7ec363f)
+
 
