@@ -1,17 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Inter", sans-serif;
-  --font-primary: #fff;
-  --font-secondary: #adadad;
+  font-family: "Montserrat", sans-serif;
+  --font-primary: #222222;
+  --font-secondary: #3d81a8;
 }
 
 body {
-  background-color: #818cf8;
-  background-image: linear-gradient(315deg, #818cf8 0%, #4f46e5 74%);
+  background-color: #d8eff7;
+  background-image: linear-gradient(315deg, #badae5 0%, #d8eff7 74%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,9 +23,9 @@ main {
   width: 100%;
   display: flex;
   justify-content: center;
-  gap: 100px;
+  gap: 40px;
   /* border: 1px solid white; */
-  padding: 50px 150px;
+  padding: 50px 50px;
 }
 
 .left-container {
@@ -78,7 +78,7 @@ main {
 .dot {
   width: 5px;
   height: 5px;
-  background-color: #fff;
+  background-color: #3d81a8;
   border-radius: 50%;
 }
 

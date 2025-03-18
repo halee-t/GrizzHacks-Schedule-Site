@@ -1,0 +1,202 @@
+{
+  "2025-03-22": [
+    {
+      "name": "Check In/Sponsor Fair",
+      "description": "",
+      "startTime": "10:00",
+      "endTime": "11:00",
+      "location": "EC Atrium"
+    },
+    {
+      "name": "Opening Ceremony",
+      "description": "",
+      "startTime": "11:00",
+      "endTime": "11:30",
+      "location": "EC 116"
+    },
+    {
+      "name": "Sponsor Expo",
+      "description": "Hacking starts at 12pm",
+      "startTime": "11:30",
+      "endTime": "13:00",
+      "location": "EC Atrium"
+    },
+    {
+      "name": "Lunch (Chipotle)",
+      "description": "Burritos: Chicken, Carnitas, Steak, Beef Barbacoa, Sofritas, and Veggie",
+      "startTime": "13:00",
+      "endTime": "14:00",
+      "location": "1st Floor"
+    },
+    {
+      "name": "Tech Talk (FREE-WILi)",
+      "description": "Intro to FREE-WILi - Arpan Rughani",
+      "startTime": "13:30",
+      "endTime": "14:00",
+      "location": "EC 254"
+    },
+    {
+      "name": "Tech Talk (OU Credit Union)",
+      "description": "A Day in the Life - Brandon Kengel",
+      "startTime": "14:00",
+      "endTime": "14:30",
+      "location": "EC 254"
+    },
+    {
+      "name": "Tech Talk (OU Credit Union)",
+      "description": "Life of an Intern - Daniel Loudon",
+      "startTime": "14:30",
+      "endTime": "15:00",
+      "location": "EC 254"
+    },
+    {
+      "name": "Tech Talk (365 Retail Markets)",
+      "description": "Applicant, Intern, Employee: Tips from a Software Development Manager - Ashley Copeland",
+      "startTime": "15:00",
+      "endTime": "15:30",
+      "location": "EC 254"
+    },
+    {
+      "name": "Tech Talk (Whisker)",
+      "description": "TBD",
+      "startTime": "15:30",
+      "endTime": "16:00",
+      "location": "EC 254"
+    },
+    {
+      "name": "Workshop (MLH)",
+      "description": "Making Better Hacks Faster with GitHub Copilot - Farhan (MLH Coach)",
+      "startTime": "16:00",
+      "endTime": "16:30",
+      "location": "EC 254"
+    },
+    {
+      "name": "Coding In Progress...",
+      "description": "",
+      "startTime": "16:30",
+      "endTime": "18:00",
+      "location": ""
+    },
+    {
+      "name": "Dinner (Happy's Pizza and O Grizzly's Wings)",
+      "description": "Breadsticks, Salad, Pizza Options: Cheese, All Meat, Pepperoni, Chicken, Halal Pepperoni, Veggie",
+      "startTime": "18:00",
+      "endTime": "19:00",
+      "location": "1st Floor"
+    },
+    {
+      "name": "Game Room (Board Games)",
+      "description": "Thank you Oakland Gaming Guild!",
+      "startTime": "19:00",
+      "endTime": "21:00",
+      "location": "EC 281"
+    },
+    {
+      "name": "Game Room (Video Games)",
+      "description": "Thank you Oakland Smash Club!",
+      "startTime": "21:00",
+      "endTime": "23:00",
+      "location": "EC 281"
+    },
+    {
+      "name": "DevPost Questions",
+      "description": "DevPost Registration due at Midnight! Stop by if you need help",
+      "startTime": "23:00",
+      "endTime": "24:00",
+      "location": "EC 116"
+    }
+  ],
+  "2025-03-23": [
+    {
+      "name": "Cookies and Trivia",
+      "description": "Insomnia Cookies (GF and V available!!)",
+      "startTime": "0:00",
+      "endTime": "0:30",
+      "location": "EC 116"
+    },
+    {
+      "name": "Coding In Progress...",
+      "description": "",
+      "startTime": "0:30",
+      "endTime": "1:00",
+      "location": ""
+    },
+    {
+      "name": "BINGO",
+      "description": "Jets Pizza Gift Cards",
+      "startTime": "1:00",
+      "endTime": "1:30",
+      "location": "EC 116"
+    },
+    {
+      "name": "Coding and Sleeping",
+      "description": "We have a sleep/quiet room open in EC 279",
+      "startTime": "1:30",
+      "endTime": "5:00",
+      "location": ""
+    },
+    {
+      "name": "Early Breakfast (Assorted)",
+      "description": "",
+      "startTime": "5:00",
+      "endTime": "6:00",
+      "location": "1st Floor"
+    },
+    {
+      "name": "Coding and Sleeping",
+      "description": "We have a sleep/quiet room open in EC 279",
+      "startTime": "6:00",
+      "endTime": "8:00",
+      "location": ""
+    },
+    {
+      "name": "Breakfast (Assorted)",
+      "description": "Tim Hortons Coffee",
+      "startTime": "8:00",
+      "endTime": "9:00",
+      "location": "1st Floor"
+    },
+    {
+      "name": "Coding...",
+      "description": "It's The Final Countdown....",
+      "startTime": "9:00",
+      "endTime": "12:00",
+      "location": "EC 254"
+    },
+    {
+      "name": "Hacking Ends!",
+      "description": "Please be patient as we prepare for judging. Demos will start at 12:30pm",
+      "startTime": "12:00",
+      "endTime": "12:30",
+      "location": "Everywhere"
+    },
+    {
+      "name": "Demos and Judging",
+      "description": "3 minute demos!",
+      "startTime": "12:30",
+      "endTime": "14:00",
+      "location": "EC 116"
+    },
+    {
+      "name": "Lunch (Jimmy Johns)",
+      "description": "Subs: Veggie, The Pepe (Ham), Turkey Tom, and The Vito (Italian)",
+      "startTime": "14:00",
+      "endTime": "15:00",
+      "location": "1st Floor"
+    },
+    {
+      "name": "Closing Ceremony",
+      "description": "It's been fun :)",
+      "startTime": "15:00",
+      "endTime": "15:30",
+      "location": "EC 116"
+    },
+    {
+      "name": "The End!",
+      "description": "See you at GrizzHacks8...👀",
+      "startTime": "15:30",
+      "endTime": "16:00",
+      "location": "Oakland University"
+    }
+  ]
+}
