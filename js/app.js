@@ -1,5 +1,5 @@
 var app = angular.module("grizzHacksSchedule", []);
-// var testTime = new Date("March 01, 2024 19:00:00 GMT-0500"); //for testing purposes
+//var testTime = new Date("March 23, 2025 15:30:00 GMT-0400"); //for testing purposes
 
 app.filter("pad", function () {
   return function (input) {
@@ -14,7 +14,7 @@ app.controller("ScheduleCtrl", function ($scope, $http, $interval, $filter) {
   $scope.sec = 0;
 
   //COUNT DOWN CODE
-  var targetDate = new Date("March 10, 2024 12:30:00 GMT-0400"); // Adjust for your timezone
+  var targetDate = new Date("March 23, 2025 12:00:00 GMT-0400"); // Adjust for your timezone
 
   function calculateCountdown() {
     var now = new Date();
@@ -35,7 +35,7 @@ app.controller("ScheduleCtrl", function ($scope, $http, $interval, $filter) {
 
   function loadSchedule() {
     $http
-      .get("./schedule/grizzhacks6_schedule.json")
+      .get("./schedule/grizzhacks7_schedule.json")
       .then(function (response) {
         $scope.events = response.data;
         updateCurrentEvents();
@@ -48,7 +48,7 @@ app.controller("ScheduleCtrl", function ($scope, $http, $interval, $filter) {
 
   function updateCurrentEvents() {
     var currentTime = new Date();
-    // var currentTime = testTime; //for testing purposes
+    //var currentTime = testTime; //for testing purposes
 
     $scope.currentEvent = findCurrentEvent(currentTime);
 
