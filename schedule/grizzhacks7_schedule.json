@@ -58,7 +58,7 @@
     },
     {
       "name": "Tech Talk (Whisker)",
-      "description": "TBD",
+      "description": "College Student to Software Engineer - Alex Muszyn",
       "startTime": "15:30",
       "endTime": "16:00",
       "location": "EC 254"
@@ -71,9 +71,16 @@
       "location": "EC 254"
     },
     {
+      "name": "Workshop",
+      "description": "Intro to Figma",
+      "startTime": "16:30",
+      "endTime": "17:00",
+      "location": "EC 254"
+    },
+    {
       "name": "Coding In Progress...",
       "description": "",
-      "startTime": "16:30",
+      "startTime": "17:00",
       "endTime": "18:00",
       "location": ""
     },
@@ -193,7 +200,7 @@
     },
     {
       "name": "The End!",
-      "description": "See you at GrizzHacks8...👀",
+      "description": "See you at GrizzHacks 8...👀",
       "startTime": "15:30",
       "endTime": "16:00",
       "location": "Oakland University"
